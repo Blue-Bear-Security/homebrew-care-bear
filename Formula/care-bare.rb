@@ -5,21 +5,21 @@
 class CareBare < Formula
   desc "Enforce skill-loading requirements for AI coding agents"
   homepage "https://github.com/Blue-Bear-Security/care-bare"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Blue-Bear-Security/care-bare/releases/download/v0.3.0/care-bare_0.3.0_darwin_amd64.tar.gz"
-      sha256 "1aa1bb5b7fc9381983a82dfc4a6ea8c681c4052a479c919f94d674d2f188abd1"
+      url "https://github.com/Blue-Bear-Security/care-bare/releases/download/v0.4.0/care-bare_0.4.0_darwin_amd64.tar.gz"
+      sha256 "12c907b7a7498850646dfc26330ebe2fe92613a2fe7c420efb71343997d1203a"
 
       define_method(:install) do
         bin.install "care-bare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Blue-Bear-Security/care-bare/releases/download/v0.3.0/care-bare_0.3.0_darwin_arm64.tar.gz"
-      sha256 "418eecee879abdc2acfaa60e53b2811a064c72c77c545fc0c43cd2aa3a91616b"
+      url "https://github.com/Blue-Bear-Security/care-bare/releases/download/v0.4.0/care-bare_0.4.0_darwin_arm64.tar.gz"
+      sha256 "c6a92ede6dbc3b969ddd5680fd278b8fee99502aba0e4af332168a2dacf9feb8"
 
       define_method(:install) do
         bin.install "care-bare"
@@ -29,15 +29,15 @@ class CareBare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blue-Bear-Security/care-bare/releases/download/v0.3.0/care-bare_0.3.0_linux_amd64.tar.gz"
-      sha256 "bf2636e82805ad1a762a70efc815af633be5c90af35f091f2906a42175a35bf0"
+      url "https://github.com/Blue-Bear-Security/care-bare/releases/download/v0.4.0/care-bare_0.4.0_linux_amd64.tar.gz"
+      sha256 "e047ae9eafc8e4a93c20e548d14acbdb45afcb00ec90ce63c5a434b695045078"
       define_method(:install) do
         bin.install "care-bare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blue-Bear-Security/care-bare/releases/download/v0.3.0/care-bare_0.3.0_linux_arm64.tar.gz"
-      sha256 "fa2e49caa5c260e9068d6a1eafa4d345a756dac2c30df2df1d7030bc2c756714"
+      url "https://github.com/Blue-Bear-Security/care-bare/releases/download/v0.4.0/care-bare_0.4.0_linux_arm64.tar.gz"
+      sha256 "735e7f78d99e5e3af9599f1c2adc096a66faab193b571c8589a93b0446573f24"
       define_method(:install) do
         bin.install "care-bare"
       end
